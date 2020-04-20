@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script type="text/javascript" src="BloquearTeclas.js"></script>
+</head>
+<title>Bloquear teclas</title>
+<body>
+   <form id="myform" method="" onsubmit="return false;">
+      Este campo no aceptará caractéres especiales: (como !@#$* etc) - pero acepta guión bajo _
+      <br>
+      <input type="text" size="35"  onkeyup="validar(this,'especiales')" onblur="validar(this,'especiales')">
+      <br>
+      <br>
+      Este campo no aceptará comillas dobles ni simples:
+      <br>
+      <input type="text" size="35" onkeyup="validar(this,'comillas')" onblur="validar(this,'comillas')">
+      <br>
+      <br>
+      Este campo aceptará solamente números enteros:
+      <br>
+      <input type="text" size="35" onkeyup="validar(this,'no_numeros')" onblur="validar(this,'no_numeros')">
+</form>
+</body>
+</html>
